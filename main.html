@@ -1,18 +1,14 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Form Login</title>
+  <title>Form</title>
+  <script src="script.js"></script>
 </head>
 <body>
-  <form id="myForm">
-    <label for="firstName">First Name:</label>
-    <input type="text" id="firstName" name="firstName"><br><br>
-    <label for="lastName">Last Name:</label>
-    <input type="text" id="lastName" name="lastName"><br><br>
-    <input type="submit" value="Submit">
+  <form>
+    <label for="formInput">Name:</label>
+    <input type="text" id="formInput" />
+    <button type="button" onclick="getFormValue()">Submit</button>
   </form>
-
-  <script src="script.js"></script>
 </body>
 </html>
