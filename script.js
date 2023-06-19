@@ -1,17 +1,13 @@
-function getFormvalue() {
-    //Write your code here
-	// script.js
 function getFormValue() {
-  event.preventDefault(); // Prevents form submission
+  var formInput = document.getElementById('formInput').value;
 
-  const firstName = document.getElementById("firstName").value;
-  const lastName = document.getElementById("lastName").value;
+  // Extracting the first and last name
+  var firstName = formInput.split(' ')[0];
+  var lastName = formInput.split(' ').slice(-1)[0];
 
-  alert("First Name: " + firstName + "\nLast Name: " + lastName);
+  // Displaying the first and last name using alert()
+  alert('First Name: ' + firstName + '\nLast Name: ' + lastName);
 }
 
-// Attach the form submission event handler
-document.getElementById("myForm").addEventListener("submit", getFormValue);
 
 
-}
