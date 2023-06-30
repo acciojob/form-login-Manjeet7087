@@ -1,9 +1,7 @@
-function getFormValue() {
-  var firstName = document.getElementById('firstName').value.trim();
-  var lastName = document.getElementById('lastName').value.trim();
-
-  // Displaying the first and last name using alert()
-  alert('First Name: ' + firstName + '\nLast Name: ' + lastName);
+function getFormvalue() {
+    //Write your code here
+ const Formele=document.getElementById("form1");
+	const name=Formele.elements['fname'].value;
+	const lname=Formele.elements['lname'].value;
+	alert(`${name} ${lname}`);
 }
-
-  
