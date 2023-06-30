@@ -4,4 +4,5 @@ function getFormvalue() {
 	const name=Formele.elements['fname'].value;
 	const lname=Formele.elements['lname'].value;
 	alert(`${name} ${lname}`);
+
 }
